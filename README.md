@@ -13,6 +13,8 @@ make install
 After you have installed ncnn, use the following commands to build the ncnn model on your jetson device
 
 ```
+git clone https://github.com/gahangandi11/YOLOPv2-ncnn-on-Jetson-Orin.git
+cd YOLOPv2-ncnn-on-Jetson-Orin
 mkdir build
 cd build 
 cmake ..
