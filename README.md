@@ -8,4 +8,14 @@ mkdir -p build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=../toolchains/jetson.toolchain.cmake -DNCNN_VULKAN=ON -DNCNN_BUILD_EXAMPLES=ON ..
 make -j$(nproc)
+make install
+```
+After you have installed ncnn, use the following commands to build the ncnn model on your jetson device
+
+```
+mkdir build
+cd build 
+cmake ..
+make 
+./yolopv2_ncnn ../imgs/veh3.jpg
 ```
